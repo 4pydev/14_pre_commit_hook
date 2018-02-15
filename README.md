@@ -1,7 +1,14 @@
-# Quadratic Equations Solver
+# Автозапуск тестов с pre-commit
 
-[TODO. There will be project description]
+При использовании скрипта pre-commit (см. ниже) при попытке коммита будет запускаться проверка всех .py файлов в корне проекта на соответствие стандартам PEP8, а также тесты из файла tests.py. 
 
-# Project Goals
+Коммит будет выполнен только в случае успешного завершения всех тестовых мероприятий.
 
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+# Как использовать
+
+Файл pre-commit переместить в папку ./.git/hooks.
+
+При необходимости сделать файл исполняемым:
+```bash
+$ sudo chmod +x pre-commit
+```
