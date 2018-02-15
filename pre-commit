@@ -1,0 +1,9 @@
+#!/bin/bash
+
+pep8 *.py
+
+python tests.py
+
+
+
+
